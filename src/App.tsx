@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Error404, Home, Hotel, List } from "./pages";
+import { Error404, Home, Hotel, List } from "@/pages";
 
 const App = () => (
   <BrowserRouter>
