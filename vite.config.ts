@@ -10,7 +10,10 @@ export default defineConfig({
     federation({
       name: "remote1",
       filename: "remoteEntry.js",
-      exposes: {},
+      exposes: {
+        "./PokemonList": "./src/components/PokemonList/PokemonList",
+        "./Pokemon": "./src/atoms/Pokemon.ts",
+      },
       shared: ["react", "react-dom", "jotai"],
     }),
   ],
